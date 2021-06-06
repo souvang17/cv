@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------------Element Tag-----------------------------*/
+
+body {
+  background-color: #ff96ad;
+  font-family: Neue Helvetica, Helvetica, sans-serif;
+  font-size: 16px;
+
+}
+
+img {
+  border-radius: 6px;
+
+  display: block;
+  margin: auto auto 30px;
+  width: 300px;
+}
+
+p {
+  line-height: 150%;
+}
+/*---------------------------Class Tag-----------------------------*/
+
+.main-page {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  padding: 0px;
+  width: 1200px;
+  height: 1600px;
+}
+
+.first-column {
+  background-color: #005a8d;
+  border-radius: 6px 0px 0px 6px;
+  color: white;
+  padding: 30px;
+  width: 300px;
+  height: 1540px;
+}
+
+.second-column {
+  background-color: #fff5fd;
+  border-radius: 0px 6px 6px 0px;
+  color: black;
+  padding: 30px;
+  width: 780px;
+  height: 1540px;
+
+  position: relative;
+  left: 360px;
+  bottom: 1600px;
+
+}
+
+.flex-container {
+  display: flex;
+}
+
+.left-column {
+  width: 50%;
+  background-color: green;
+}
+
+.right-column {
+  width: 50%;
+  background-color: red;
+}
+
+.first-column h1 {
+  text-align: center;
+
+}
+
+.second-column h1 {
+  font-size: 48px;
+
+}
+
+.second-column h2 {
+  font-size: 32px;
+
+}
+
+/*---------------------------Media fix-----------------------------*/
+
+/*
+
+@media only screen and (max-width: 1240px) {
+  .main-page {
+    margin: 20px 20px;
+    width: auto;
+  }
+
+  .second-column {
+    width: fit-content;
+  }
+}
+
+*/
