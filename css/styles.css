@@ -128,7 +128,10 @@ section h2 { padding-bottom: 20px; }
 
 /*---------------------------ID Tags-----------------------------*/
 
-#position-heading { text-align: center; }
+#position-heading {
+  text-align: center;
+  padding-bottom: 0;
+}
 
 /*---------------------------Responsive script-----------------------------*/
 
