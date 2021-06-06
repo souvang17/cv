@@ -15,21 +15,18 @@ body {
 main {
   border-radius: 6px;
   box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
-  margin: 20px 20px;
   width: auto;
   height: auto;
 }
 
 aside {
   background-color: #005a8d;
-  border-radius: 6px 6px 0px 0px;
   color: rgba(245, 245, 245, 1);
   padding: 30px;
 }
 
 section {
   background-color: rgba(245, 245, 245, 1);
-  border-radius: 0px 0px 6px 6px;
   color: black;
   padding: 30px;
 }
@@ -70,27 +67,9 @@ section h2 { padding-bottom: 20px; }
 
 /*---------------------------Class Tags-----------------------------*/
 
-.columns { padding-bottom: 20px; }
-
-.flex-container-contact { display: flex; }
-
-.bar-30 {
-  background-color: #1eae98;
-  height: 16px;
-  width: 30%;
-  border-radius: 6px 0 0 6px;
-}
-
-.bar-20 {
-  background-color: #1eae98;
-  height: 16px;
-  width: 100%;
-  border-radius: 6px;
-}
-
-.profile {
+.profile-picture {
   display: block;
-  border-radius: 6px;
+  border-radius: 50%;
   box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
   margin: 0px auto 30px;
   width: 100%;
@@ -104,14 +83,32 @@ section h2 { padding-bottom: 20px; }
   width: 24px;
 }
 
+.columns { padding-bottom: 20px; }
+
+.flex-container-contact { display: flex; }
+
+.center-padding {
+  padding: 0 15px;
+}
+
 .bar-background {
   background: rgba(150, 150, 150, 0.3);
   border-radius: 6px;
 }
 
-.center-padding {
-  padding: 0 15px;
+.bar-70, .bar-60, .bar-50, .bar-40 {
+  background-color: #1eae98;
+  height: 16px;
+  border-radius: 6px 0 0 6px;
 }
+
+.bar-70 { width: 70%; }
+
+.bar-60 { width: 60%; }
+
+.bar-50 { width: 50%; }
+
+.bar-40 { width: 40%; }
 
 /*---------------------------Responsive script-----------------------------*/
 
@@ -122,7 +119,10 @@ section h2 { padding-bottom: 20px; }
 }
 
 @media only screen and (min-width: 1150px) {
-  main { display: flex; }
+  main {
+    display: flex;
+    margin: 20px 20px;
+  }
 
   aside {
     flex: 30%;
