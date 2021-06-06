@@ -36,6 +36,22 @@ span {
   display: flex;
 }
 
+a {
+  align-items: center;
+  display: flex;
+}
+
+a:link, a:visited {
+    color: rgba(245, 245, 245, 1);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    transition: 0.2s;
+    font-size: 1.2em;
+    color: #1eae98;
+}
+
 h1 {
   font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -53,7 +69,7 @@ hr { margin: 20px auto; }
 
 ul { list-style-type: none; vertical-align: middle;}
 
-aside h1, aside h3 { text-align: center; }
+aside h1 { text-align: center; }
 
 aside h2 { padding-bottom: 20px; }
 
@@ -109,6 +125,10 @@ section h2 { padding-bottom: 20px; }
 .bar-50 { width: 50%; }
 
 .bar-40 { width: 40%; }
+
+/*---------------------------ID Tags-----------------------------*/
+
+#position-heading { text-align: center; }
 
 /*---------------------------Responsive script-----------------------------*/
 
