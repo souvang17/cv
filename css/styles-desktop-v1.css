@@ -1,0 +1,224 @@
+/* ---------------STARTUP STYLES--------------- */
+
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* Changes the fonts */
+body {
+  font-family: Neue Helvetica, Helvetica, sans-serif;
+  font-size: 1rem; /* 16px */
+}
+
+/* Remove color and decoration from links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove bullets from lists */
+li {
+  list-style: none;
+}
+
+/* ---------------DEFAULTS AND VARIABLES--------------- */
+
+/* Variables for colors */
+:root {
+  --color-1: #E8F0F2;
+  --color-2: #A2DBFA;
+  --color-3: #39A2DB;
+  --color-4: #053742;
+}
+
+/* ---------------NAVIGATION BAR--------------- */
+
+/* Styles the header */
+.header {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+
+/* Styles the navigation bar */
+.nav-bar {
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Styles the navigation menu */
+.nav-menu {
+  align-items: center;
+  display: flex;
+  margin-right: 32px;
+}
+
+/* Adds flex to change the nav-menu to rows */
+.nav-menu ul {
+  display: flex;
+}
+
+/* Styles the navigation logo */
+.nav-logo {
+  color: var(--color-3);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 32px;
+}
+
+/* Styles the navigation links */
+.nav-links {
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 32px;
+  padding: 8px;
+}
+
+/* Styles the navigation links when hover */
+.nav-links:hover {
+  /* TESTING */
+  background-color: var(--color-2);
+  transition: 0.3s;
+}
+
+/* Styles the hamburger menu */
+.hamburger {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0 auto 32px;
+}
+
+/* Design of the hamburger menu bars */
+.bar-top, .bar-mid, .bar-bot {
+  background-color: black;
+  display: inline-block;
+  height: 3px;
+  margin: 3px 0;
+  width: 24px;
+}
+
+/* ---------------BODY--------------- */
+
+/* Add and styles the background image */
+.landing-page {
+  background-image: url(../images/pexels-pixabay-33109.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Testing a searchbox in the middle */
+.block {
+  width: 60%;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  top: 40%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+
+/* Add card grids */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1600px;
+  grid-gap: 32px;
+  padding: 32px;
+}
+
+/* Styles the grid content */
+.grid-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-image {
+  background-color: blue;
+  height: 240px;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-content p {
+  margin: 32px;
+}
+
+.footer {
+  background-color: var(--color-4);
+  width: 100%;
+  height: 400px;
+}
+
+/* ---------------@MEDIA--------------- */
+
+/* Responsive Script */
+@media only screen and (max-width: 1280px) {
+
+  /* Change the grid to 1 */
+  .grid-wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+
+
+
+/* Responsive Script */
+@media only screen and (max-width: 768px) {
+
+  /* Styles the hamburger menu */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 14px;
+  }
+
+  /* Hides the navigation menu */
+  .nav-menu {
+    display: none;
+  }
+
+  /* Centers the navigation logo */
+  .nav-logo {
+    margin: auto;
+  }
+
+  /* Change the grid to 1 */
+  .grid-wrapper {
+    grid-template-columns: repeat(1, auto);
+
+    /* test */
+    padding: 32px 0;
+  }
+
+  /* Styles the grid content */
+  .grid-content {
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+  }
+}
